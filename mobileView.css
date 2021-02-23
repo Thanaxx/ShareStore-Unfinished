@@ -1,0 +1,87 @@
+@media (max-width:720px){
+    .fixedSideBar{
+        display: none;
+    }
+    .worksPage, .createPage, .draftsContainer{
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+    .wrk{
+        width: 60%;
+        min-height: 200px;
+        margin: 15px 100px;
+    }
+    .wrk h1{
+        font-size: 40px;
+        margin-top: 70px;
+    }
+
+    /* MENU */
+    .menuSide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 15px;
+    }
+    .shareOpen{
+        position: fixed;
+    }
+    .menuSide a{
+        color: #FFCA28;
+    }
+    .menuOptions{
+        background-color: #FFCA28;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .menuOptions a{
+        display: block;
+        padding: 8px 0;
+        font-size: 32px;
+        text-decoration: none;
+        margin: 70px 15px 0px 15px;
+        position: relative;
+        color: #ffffff;
+        text-shadow: 0px 3px 3px #929292;
+        letter-spacing: 3px;
+    }
+    .menuOptions a:hover{
+        color: #FFCA28;
+        background-color: white;
+    }
+    .menuOptions h1{
+        color: rgb(253, 249, 249);
+        float: right;
+        padding: 10px 25px;
+        font-size: 45px;
+        cursor: pointer;
+    }
+
+    /* CREATE MOBILE SIZE */
+    .createPage{
+        padding: 30px 40px;
+    }
+    .createOptions{
+        margin-left: 0px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .createOptions > button{
+        width: 100%;
+        height: 100px;
+        background-image: none;
+    }
+    
+    /* DRAFTS MB */
+    .draftsContainer{
+        padding: 30px 40px;
+        margin-top: 30px;
+    }
+
+}

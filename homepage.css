@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HOMEPAGE OF SHARESTORE*/
+.homepage{
+    background-color: #FFCA28;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 55px;
+}
+nav button{
+    float: right;
+    padding: 6px 15px;
+    margin: 20px 30px;
+    background-color: #FFCA28;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #e4e4e4cc;
+    box-shadow: 0px 2px 3px #00000031;
+    cursor: pointer;
+}
+.homepageCover{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.homeImg{
+    margin: auto;
+}
+.homeTitle{
+    text-align: center;
+    color: white;
+}
+.homeTitle h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 4px #00000049;
+    font-weight: lighter;
+}
+.homeTitle p{
+    font-size: 18px;
+    letter-spacing: 7px;
+    font-weight: lighter;
+}
+.homeIcons{
+    text-align: center;
+    padding: 13px 0px;
+}
+.homeIcons i{
+    color: #FFF170;
+    margin: 0px 7px;
+    text-shadow: 0px 3px 4px #00000049;
+    font-size: 23px;
+}
+

@@ -1,0 +1,88 @@
+.write{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+.writeNav{
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.writeNav button{
+    float: right;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+.writingArea{
+    width: 100%;
+    min-height: 500px;
+    padding: 0px 100px;
+}
+.writingArea input, textarea{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.writingArea input{
+    text-align: center;
+    border-bottom: 2px solid #ffe6008f;
+    color: rgb(82, 83, 0);
+}
+.writingArea textarea{
+    text-align: left;
+    color: rgb(82, 83, 0);
+}
+.styleIcons{
+    width: 100%;
+    text-align: center;
+}
+.styleIcons button{
+    cursor: pointer;
+    margin: 0px 5px;
+    border: 1px solid #ffc92893;
+    border-radius: 4px;
+    background: #FFCA28;
+}
+.styleIcons i{
+    padding: 7px 12px;
+}
+
+
+/*MENU MODAL*/
+.menuModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000062;
+}
+.menu{
+    background-color: #FFCA28;
+    width: 130px;
+    height: auto;
+    padding: 8px;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    text-align: center;
+}
+.menu a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    background: #ffffff;
+    color: #FFCA28;
+}

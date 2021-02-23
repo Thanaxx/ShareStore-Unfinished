@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./homepage.css">
+    <link rel="stylesheet" type="text/css" href="./mainpage.css">
+    <link rel="stylesheet" type="text/css" href="./create.css">
+    <link rel="stylesheet" type="text/css" href="./drafts.css">
+    <link rel="stylesheet" type="text/css" href="./write.css">
+    <link rel="stylesheet" type="text/css" href="./mobileView.css">
+    <link rel="stylesheet" href="./cssFontawesome/all.min.css">
+    <title>ShareStore</title>
+</head>
+<body>
+
+    
+
+    <!-- HOME PAGE OF SHARESTORE -->
+    <div class="homepage" style="display: block;">
+
+        <nav>
+            <button class="login">Log in</button>
+        </nav>
+
+        <div class="homepageCover">
+            <div class="homeImg">
+                <img src="./ShareStoreImages/undraw_Chatting_re_j55r (1).svg" alt="" width="350px" height="auto">
+            </div>
+
+            <div class="homeTitle">
+                <h1>SHARESTORE</h1>
+                <p>CONNECT YOUR THOUGHTS</p>
+            </div>
+
+            <div class="homeIcons">
+                <a href="https://www.facebook.com/christeljoy.abordaje.3/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/thanna_dev/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/Thannaxx"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/christeljoy-abordaje-782b63204/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAIN PAGE OF SHARESTORE -->
+    <div class="mainpage" style="display: none;">
+        
+        <div class="fixedSideBar">
+            <img src="./ShareStoreImages/profile.png" alt="" style="width: 200px;" height="200px">
+            <a href="#" class="works">WORKS</a>
+            <a href="#" class="create">CREATE</a>
+            <a href="#" class="drafts">DRAFTS</a>
+
+            <div class="whenSignedIn" hidden = "true">
+                <a href="#" class="signout">LOG OUT</a>
+            </div>
+
+            <div class="settingIcon">
+                <button id="setIcon" class="setIconA"><i class="fa fa-3x fa-cog"></i></button>
+            </div>
+        </div>
+
+        <div class="settingWrapper" style="display: none;">
+            <div class="settingOptions">
+                <a href="#">Darkmode <input type="checkbox" name="darkmode" id="darkmode"></a>
+                <a href="#">Contacts</a>
+                <a href="#">Language</a>
+                <a href="#">About</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+
+        <!-- WORK/S ADDED -->
+        <div class="worksPage" style="display: none;">
+            
+            <div class="worksCreated">
+                <div class="book"></div>
+            </div>
+        </div>
+
+        <!-- CREATE WORK -->
+        <div class="createPage" style="display: none;">
+            <div class="createOptions">
+                <button class="blog">
+                    <p>Blog <i class="fas fa-pencil-alt"></i></p>
+                </button>
+    
+                <button class="poem">
+                    <p>Poem <i class="fas fa-pencil-alt"></i></p>
+                </button>
+    
+                <button class="story">
+                    <p>Story <i class="fas fa-pencil-alt"></i></p>
+                </button>
+    
+                <button class="article">
+                    <p>Article <i class="fas fa-pencil-alt"></i></i></p>
+                </button>
+            </div>
+        </div>
+
+        <!-- DRAFTS -->
+        <div class="draftsContainer" style="display: none;">
+            <div class="draftsCreated">
+                <div class="drafted"></div>
+            </div>
+        </div>
+
+                    <!-- SIDEBAR -->
+    <div class="menuSide" style="display: none;">
+        <div class="shareOpen">
+            <a href="#"><i class="fa fa-2x fa-align-left"></i></a>
+        </div>
+        
+        <div class="menuOptions">
+            <h1 class="shareClose">&times;</h1>
+            <a href="#" class="works">Works</a>
+            <a href="#" class="create">Create</a>
+            <a href="#" class="drafts">Drafts</a>
+            <a href="#" class="signout">Logout</a>
+            
+            
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- WRITING PAGE -->
+    <div class="write" style="display: none;">
+        <div class="writeNav">
+            <button class="options"><i class="fa fa-2x fa-ellipsis-h"></i></button>
+        </div>
+        <div class="writingArea">
+
+            <form class="inputs">
+                <input class="title" type="text" placeholder="Title">
+                <textarea class="bodyContainer" name="" id="" cols="170" rows="20" placeholder="Start typing..."></textarea>
+            </form>
+
+            
+            <div class="styleIcons">
+                <button><i class="fa fa-bold"></i></button>
+                <button><i class="fa fa-underline"></i></button>
+                <button><i class="fa fa-italic"></i></button>
+                <button><i class="fa fa-bars"></i></button>
+                <button><i class="fa fa-align-left"></i></button>
+                <button><i class="fa fa-align-center"></i></button>
+                <button><i class="fa fa-align-right"></i></button>
+                <button><i class="fa fa-palette"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRITING MENU-MODAL -->
+    <div class="menuModal" style="display: none;">
+        <div class="menu">
+            <a href="#" class="saved" onclick="saveWork()">Save work</a>
+            <a href="#" class="draft" onclick="saveDraft()">Save as draft</a>
+            <a href="#">Preview</a>
+            <a href="#" class="cancelOpt">Cancel</a>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+    <script src="./ShareStoreDb.js"></script>
+    <script src="./store.js"></script>
+
+</body>
+</html>

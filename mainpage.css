@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.fixedSideBar{
+    flex: 1;
+    background-color: #FFCA28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    padding: 25px;
+}
+.fixedSideBar img{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.fixedSideBar a{
+    text-align: center;
+    font-size: 33px;
+    text-decoration: none;
+    color: #ffff;
+    display: block;
+    margin: 35px 0;
+}
+.worksPage{
+    padding-left: 350px;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.worksCreated{
+    padding: 30px;
+}
+
+/*JS INNER HTML DISPLAY*/
+.book, .drafted{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.wrk{
+    width: 20%;
+    margin: 10px;
+    margin: 20px 15px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #8686860c;
+    border-radius: 10px;
+    min-height: 250px;
+    box-shadow: 0px 2px 5px #5c5c5cb2;
+    background-image: url(./ShareStoreImages/tryit.png);
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+.wrk h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    color: #FFCA28;
+    letter-spacing: 7px;
+}
+.wrk button{
+    font-size: 20px;
+    color: #969696;
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    float: right;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-top: 80px;
+}
+.wrk button:hover{
+    color: #d6aa25;
+}
+
+
+/*back btn in the writing page*/
+.btnNav{
+    width: 100%;
+}
+.backB{
+    background-color: #FFCA28;
+    padding: 6px 15px;
+    float: right;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sulat{
+    border: 1px solid #ffc9281a;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    margin: 50px;
+    min-height: 70vh;
+    color: rgb(43, 43, 43);
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: rgb(104, 104, 104);
+}
+
+
+/* SETTING ICON */
+#setIcon{
+    border: none;
+    outline: none;
+    background-color: #d8bfd800;
+    color: #ffffff;
+    cursor: pointer;
+}
+.settingOptions{
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+    height: auto;
+    min-width: auto;
+    background-color: white;
+    padding: 10px;
+}
+.settingOptions a{
+    color: black;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+.settingOptions a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #FFCA28;
+}
+.settingWrapper{
+    background-color: #0000007e;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* DARKTHEME CSS */
+body.dark{
+    background-color: #4B4B4B;
+}
+body.dark .wrk{
+    background-color: #606060;
+    background-image: url(./ShareStoreImages/dark.png);
+}
+body.dark .wrk>button{
+    color: #ffffff;
+}
+body.dark .createOptions>button{
+    background-image: url(./ShareStoreImages/dark2.png);
+    background-color: #ffffff00;
+    border: 0px solid #00000000;
+}
+body.dark .writingArea input{
+    background-color: #4B4B4B;
+    color: white;
+}
+body.dark .writingArea textarea{
+    background-color: #4B4B4B;
+    color: white;
+}
+body.dark .writeNav button{
+    background-color: #4B4B4B;
+    color: white;
+}
+body.dark .sulat{
+    background-color: #464646;
+    color: rgb(212, 209, 209);
+}

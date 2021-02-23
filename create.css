@@ -1,0 +1,32 @@
+.createPage{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+}
+.createOptions{
+    display: flex;
+    margin-top: 140px;
+    margin-left: 350px;
+}
+.createOptions > button{
+    color: #FFCA28;
+    width: 200px;
+    height: 285px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffc92849;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 2px 6px #727272;
+    outline: none;
+    cursor: pointer;
+    background-image: url(./ShareStoreImages/tryit.png);
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+.createOptions > button:hover{
+    box-shadow: 0px 2px 20px #FFCA28;
+    height: 310px;
+}
